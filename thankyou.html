@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEHUB</title>
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('6.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(10px);
+            z-index: -2;
+        }
+        
+        body {
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f7fafd;
+            color: #000000;
+            margin: 0;
+            padding: 40px;
+        }
+        
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-family: times new roman;
+        }
+        
+        .animated-btn {
+            padding: 12px 28px;
+            background: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(60, 80, 120, 0.08);
+            margin-top: 18px;
+        }
+        
+        .animated-btn:hover {
+            background: #2563eb;
+            transform: scale(1.06);
+            box-shadow: 0 8px 24px rgba(60, 80, 120, 0.16);
+        }
+        
+        .preview-img {
+            width: 330px;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-top: 18px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            border-top: 5px solid;
+            border-color: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
+        <img src="logo.png" alt="Game Hub Logo" style="width: 75px; height: 75px;">
+        <h1>Game Hub</h1>
+    </div>
+    <div class="center-content">
+        <a href="try.gif" target="_blank">
+            <img class="preview-img" src="try.gif" alt="Preview Image" />
+        </a>
+        <a href="index.html" class="animated-btn">GO BACK TO HOME</a>
+    </div>
+    <footer>
+        &copy; GAMING HUB, ALL RIGHTS RESERVED 2025
+    </footer>
+</body>
+
+</html>
